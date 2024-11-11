@@ -2,7 +2,7 @@
   <div class="container p-4 border border-2 border-success rounded mt-3">
     <div class="row">
       <div class="col-12">
-        <h3 class="text-center">Выберите тип приожения</h3>
+        <h3 class="text-center">Выберите тип приложения</h3>
       </div>
     </div>
     <div class="row">
@@ -14,7 +14,8 @@
         </button> -->
         <h6
           class="mc-btn-success cursor-pointer text-center border border-success rounded h-100 d-flex align-items-center justify-content-center p-2"
-          :class="{ 'bg-success-subtle': true }"
+          :class="{ 'bg-success-subtle': appType === item.id }"
+          @click="appType = item.id"
         >
           {{ item.title }}
         </h6>
@@ -24,7 +25,8 @@
       <div v-for="item in appRoutings" :key="item.id" class="col-6 p-2">
         <h6
           class="mc-btn-success cursor-pointer text-center border border-success rounded h-100 d-flex align-items-center justify-content-center p-2"
-          :class="{ 'bg-success-subtle': true }"
+          :class="{ 'bg-success-subtle': appRouting === item.id }"
+          @click="appRouting = item.id"
         >
           {{ item.title }}
         </h6>
@@ -38,8 +40,8 @@
     <div class="row">
       <div v-for="item in appHostings" :key="item.id" class="col-4 p-2">
         <h6
-          class="mc-btn-success cursor-pointer text-center border border-success rounded h-100 d-flex align-items-center justify-content-center p-2"
-          :class="{ 'bg-success-subtle': true }"
+          class="text-center border border-success rounded h-100 d-flex align-items-center justify-content-center p-2"
+          :class="{ 'bg-success-subtle': appHosting === item.id }"
         >
           {{ item.title }}
         </h6>
@@ -49,90 +51,30 @@
 </template>
 
 <script>
+import { dataAppTypes } from './data/dataAppTypes'
+import { dataAppRoutings } from './data/dataAppRoutings'
+import { dataAppHostings } from './data/dataAppHostings'
+
 export default {
   data() {
     return {
       appType: '',
       appRouting: '',
       appHostings: '',
-      appTypes: [
-        {
-          id: '1',
-          title: 'Сайт без админки',
-          description: '',
-          position: 1,
-          active: true
-        },
-        {
-          id: '2',
-          title: 'Сайт с админкой',
-          description: '',
-          position: 2,
-          active: true
-        },
-        {
-          id: '3',
-          title: 'Приложение корпоративное',
-          description: '',
-          position: 3,
-          active: true
-        },
-        {
-          id: '4',
-          title: 'Приложение публичное',
-          description: '',
-          position: 4,
-          active: true
-        }
-      ],
-      appRoutings: [
-        {
-          id: '1',
-          title: 'С роутингом',
-          description: '',
-          position: 1,
-          active: true
-        },
-        {
-          id: '2',
-          title: 'Без роутинга',
-          description: '',
-          position: 2,
-          active: true
-        }
-      ],
-      appHostings: [
-        {
-          id: '1',
-          title: 'GitHub Pages',
-          description: '',
-          position: 1,
-          active: true
-        },
-        {
-          id: '2',
-          title: 'Vercel',
-          description: '',
-          position: 2,
-          active: true
-        },
-        {
-          id: '3',
-          title: 'NetAngels',
-          description: '',
-          position: 3,
-          active: true
-        }
-      ]
+      appTypes: dataAppTypes,
+      appRoutings: dataAppRoutings,
+      appHostings: dataAppHostings
+    }
+  },
+  computed: {
+    appHosting() {
+      return this.appRouting === '1' ? '2' : '1'
     }
   }
 }
 </script>
 
 <style scoped>
-.mc-btn-success {
-  background-color: #ffffff;
-}
 .mc-btn-success:hover {
   background-color: rgb(209, 231, 220.8);
 }
