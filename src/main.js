@@ -1,5 +1,5 @@
 import './scss/styles.scss'
-//import { Dropdown, Offcanvas } from 'bootstrap'
+import { Dropdown } from 'bootstrap'
 //import { dataModels } from './data/dataModels'
 
 import { createApp } from 'vue'

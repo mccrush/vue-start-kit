@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheNavbar />
+    <!-- <TheNavbar /> -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />

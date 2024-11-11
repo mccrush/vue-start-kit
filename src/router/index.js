@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { pages as routes } from './../data/dataPages'
+import { dataPages as routes } from './../data/dataPages'
 
 const router = createRouter({
   history: createWebHistory(),
