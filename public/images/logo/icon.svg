@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="1456.2769 245.4513 592.697 541.974" xmlns="http://www.w3.org/2000/svg">
+  <g id="g-1" transform="matrix(1, 0, 0, 1, 1102.62548828125, 11.980351448059082)">
+    <linearGradient id="gradient-1" gradientUnits="userSpaceOnUse" x1="353.6514" y1="638.811" x2="819.7915" y2="638.811">
+      <stop offset="0" style="stop-color:#99D4C0"/>
+      <stop offset="0.9133" style="stop-color:#00929E"/>
+      <stop offset="1" style="stop-color:#006C6D"/>
+    </linearGradient>
+    <path id="path-1" style="fill: url('#gradient-1');" d="M814.064,681.781 L814.064,681.781l-71.522-123.88H557.408H427.277c0,0-59.354,0-73.601-55.724c-0.41,19.211,4.306,38.507,14.246,55.724 l20.279,35.124l77.113,133.564c17.454,30.232,49.712,48.856,84.621,48.856h194.783c21.794,0,42.629-6.657,60.063-18.502 C805.143,756.312,830.955,711.036,814.064,681.781z"/>
+    <g id="g-2">
+      <linearGradient id="gradient-2" gradientUnits="userSpaceOnUse" x1="646.208" y1="344.5426" x2="933.0419" y2="631.3764">
+        <stop offset="0" style="stop-color:#BA141A"/>
+        <stop offset="0.301" style="stop-color:#F04E3E"/>
+        <stop offset="0.7143" style="stop-color:#F37021"/>
+        <stop offset="0.9949" style="stop-color:#FBB040"/>
+      </linearGradient>
+      <path id="path-2" style="fill: url('#gradient-2');" d="M932.028,451.014 l-94.743-164.099c-8.67-15.017-20.702-27.379-34.805-36.441c-2.116-0.624-57.938-16.699-77.495,17.176l0,0l-75.01,129.921 l92.567,160.331l71.522,123.88h0c16.89,29.255-8.922,74.531-9.283,75.161c13.113-8.909,24.307-20.745,32.504-34.941l14.19-24.578 l80.552-139.521C951.122,524.83,951.122,484.085,932.028,451.014z"/>
+      <linearGradient id="gradient-3" gradientUnits="userSpaceOnUse" x1="578.0781" y1="557.9011" x2="578.0781" y2="233.4706">
+        <stop offset="0" style="stop-color:#008BBF"/>
+        <stop offset="0.9133" style="stop-color:#004B84"/>
+        <stop offset="1" style="stop-color:#00AEEF"/>
+      </linearGradient>
+      <path id="path-3" style="fill: url('#gradient-3');" d="M744.718,233.471h-38.991 H555.232c-38.187,0-73.474,20.372-92.567,53.444l-94.743,164.099c-9.153,15.854-13.869,33.473-14.246,51.164 c4.756,39.268,59.958,55.724,59.958,55.724h143.774l92.567-160.331l75.01-129.921c19.557-33.874,75.379-17.799,77.495-17.176 C785.525,239.579,765.565,233.471,744.718,233.471z"/>
+    </g>
+  </g>
+</svg>

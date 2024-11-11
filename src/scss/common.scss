@@ -1,0 +1,56 @@
+// Переопределение общих стилей Bootstrap
+
+btn:focus,
+btn:active,
+:not(.btn-check)+.btn:active,
+.btn-close:focus,
+.btn-check:focus+.btn-outline-dark,
+.form-control:focus,
+.form-select:focus,
+.accordion-button:focus,
+.navbar-toggler:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  // border-color: transparent;
+}
+
+.container-960 {
+  max-width: 960px;
+}
+
+.mg-vh-100 {
+  //height: 100svh;
+  height: calc(100svh - 64px);
+}
+
+.mg-w-100 {
+  width: calc(100svw - 80px);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mg-text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.border-top-light {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.mg-bg-purple-dark {
+  background-color: #564363;
+}

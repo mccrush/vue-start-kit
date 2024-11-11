@@ -1,0 +1,17 @@
+// Переопределение переменных Bootstrap
+
+
+@import "./colors";
+//@import "./fonts";
+
+//$body-color: $mc-light;
+//$body-bg: #f5f5f5;
+//$popover-bg: #212529;
+//$popover-border-color: #424649;
+//$btn-active-border-color: transparent;
+$font-family-base: "PT Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+
+$list-group-active-bg: #f8f9fa;
+$list-group-active-color: #212529;
+//$list-group-active-border-width: 1px;
+$list-group-active-border-color: #dee2e6;
