@@ -1,24 +1,26 @@
 <template>
   <div>
     <!-- <TheNavbar /> -->
-    <router-view v-slot="{ Component }">
+    <!-- <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
-    </router-view>
+    </router-view> -->
+    <PageIndex />
   </div>
 </template>
 
 <script>
 import TheNavbar from './components/interface/TheNavbar.vue'
+import PageIndex from './pages/PageIndex.vue'
 
 export default {
   components: {
-    TheNavbar
+    PageIndex
   }
 }
 </script>
 
 <style lang="scss">
-@import './scss/common';
+@use './scss/common';
 </style>
